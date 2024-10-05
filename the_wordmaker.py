@@ -23,6 +23,7 @@ def word_generator():
             next_consonant = False
         elif next_vowel:
             n_w_l = vowels[random.randint(0,4)]
+            next_vowel = False
         else:
             n_w_l = alphabet[random.randint(0,25)]
 
@@ -30,7 +31,7 @@ def word_generator():
             if n_w_l in vowels and new_word[x-1] in vowels:
                 next_consonant = True
             elif n_w_l in only_consonants and new_word[x-1] in only_consonants:
-                next_vowel = False
+                next_vowel = True
         
         new_word.append(n_w_l)
     new_word_str = "".join(new_word)
@@ -50,7 +51,7 @@ if __name__ == "__main__":
     try:
         cool_words = json.loads("new_words.json")
     except:
-        cool_words = {"myaur":"The sound that a battle cat makes."}
+        cool_words = {}
 
     done = False
     while not done:
