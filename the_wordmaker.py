@@ -66,9 +66,10 @@ if __name__ == "__main__":
                     print(f"{result}: {cool_words[result]}")
             else:
                 print(f"Your new word is {result}.")
-                want_def = input("Would you like to give the word a meaning? (Type 'No' to go back.)\n ")
+                want_def = input("Would you like to give the word a meaning? (Type 'No' to go back.) ")
+                print("\n")
                 if want_def != "No":
-                    new_def = input("Please give the word a short description, like you'd see in a dictionary.")
+                    new_def = input("Please give the word a short description, like you'd see in a dictionary. ")
                     new_dictionary(result,new_def)
                     print("Here's your current dictionary!")
                     for k,v in cool_words.items():
