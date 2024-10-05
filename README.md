@@ -1,5 +1,5 @@
-# EGandhacks2024
-
+# The Wordmaker
+What, exactly, is The Wordmaker? And *why* is it?
 ## The Wordmaker is a project that came about because...
 ...Well, I thought it would be fun. And I like words, so creating new ones seemed like an interesting premise.
 
