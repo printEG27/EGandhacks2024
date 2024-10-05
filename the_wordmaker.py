@@ -10,7 +10,6 @@ for l in alphabet:
     if l not in vowels:
         only_consonants.append(l)
 
-print(only_consonants)
 
 def word_generator():
     length = random.randint(3,15)
@@ -66,7 +65,7 @@ if __name__ == "__main__":
                     print(f"{result}: {cool_words[result]}")
             else:
                 print(f"Your new word is {result}.")
-                want_def = input("Would you like to give the word a meaning? (Type 'No' to go back.) ")
+                want_def = input("Would you like to give the word a meaning? (Type 'No' to go back.)\n ")
                 if want_def != "No":
                     new_def = input("Please give the word a short description, like you'd see in a dictionary.")
                     new_dictionary(result,new_def)
