@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 import random
 import sys
+#import the_word_fighter as fight
 
 alphabet = [chr(i) for i in range(97,123)]
 vowels = ["a","e","i","o","u"]
@@ -48,10 +49,14 @@ def save_dict(words):
     word_file.write_text(words_for_file)
 
 if __name__ == "__main__":
+
+    word_file = Path("new_words.json")
     try:
-        cool_words = json.loads("new_words.json")
-    except:
+        contents = word_file.read_text()
+        cool_words = json.loads(contents)
+    except FileNotFoundError:
         cool_words = {}
+
 
     done = False
     print("Welcome to the Wordmaker! Here, you can make words that fulfill your wildest dreams.")
