@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 import random
 import sys
-#import the_word_fighter as fight
+import the_word_fighter as fight
 
 alphabet = [chr(i) for i in range(97,123)]
 vowels = ["a","e","i","o","u"]
@@ -67,7 +67,9 @@ if __name__ == "__main__":
         print("If you'd like, you can find out...in a word fight!")
         fight_q = input("How about it? (Yes/No) ")
         if fight_q == "Yes":
-            print("Unfortunately, this feature isn't available yet. Check back later.")
+            #print("Unfortunately, this feature isn't available yet. Check back later.")
+            fight.fight_prep(cool_words)
+            fight.word_fight(cool_words)
         else:
             print("Well then, let's get to making words instead.")
     while not done:
