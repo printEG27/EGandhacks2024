@@ -66,7 +66,7 @@ if __name__ == "__main__":
         print("Here's something to consider...have you ever wondered which word is the best?")
         print("If you'd like, you can find out...in a word fight!")
         fight_q = input("How about it? (Yes/No) ")
-        if fight_q == "Yes":
+        if fight_q == "Yes" or fight_q == "yes":
             #print("Unfortunately, this feature isn't available yet. Check back later.")
             fight.fight_prep(cool_words)
             fight.word_fight(cool_words)

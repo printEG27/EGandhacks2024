@@ -28,7 +28,7 @@ class Fighter:
         if hit == 0:
             print(f"{self.name}'s attack missed!")
         else:
-            print(f"{target} just took a hit with {hit} power!")
+            print(f"{target.name} just took a hit with {hit} power!")
             target.battle_hp -= hit
 
     def recover(self):
