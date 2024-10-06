@@ -54,6 +54,17 @@ if __name__ == "__main__":
         cool_words = {}
 
     done = False
+    print("Welcome to the Wordmaker! Here, you can make words that fulfill your wildest dreams.")
+    print("Well, maybe.\n I can promise you that something good will happen when you make a lot of them!")
+    if len(cool_words)>1:
+        print("It seems like you're no stranger to making new words!")
+        print("Here's something to consider...have you ever wondered which word is the best?")
+        print("If you'd like, you can find out...in a word fight!")
+        fight_q = input("How about it? (Yes/No) ")
+        if fight_q == "Yes":
+            print("Unfortunately, this feature isn't available yet. Check back later.")
+        else:
+            print("Well then, let's get to making words instead.")
     while not done:
         prompt = input("Would you like to make a random word? (Type 'No' to exit.) ")
         if prompt == "No":
